@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "betacore",
+  "version": "${version}",
+  "name": "BetaCore",
+  "description": "beta version core mod for private server",
+  "authors": [
+    "PleahMaCaka"
+  ],
+  "contact": {
+    "website": "https://github.com/techest",
+    "repo": "https://github.com/techest/betacore"
+  },
+  "license": "MIT",
+  "icon": "./assets/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "io.github.techest.betacore.client.BetaCoreClient"
+    ],
+    "main": [
+      "io.github.techest.betacore.BetaCore"
+    ]
+  },
+  "mixins": [
+    "betacore.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
