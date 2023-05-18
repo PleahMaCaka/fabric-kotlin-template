@@ -1,33 +1,40 @@
 {
   "schemaVersion": 1,
-  "id": "betacore",
+  "id": "examplemod",
   "version": "${version}",
-  "name": "BetaCore",
+  "name": "ExampleMod",
   "description": "beta version core mod for private server",
   "authors": [
     "PleahMaCaka"
   ],
   "contact": {
-    "website": "https://github.com/techest",
-    "repo": "https://github.com/techest/betacore"
+    "website": "https://github.com/pleahmacaka",
+    "repo": "https://github.com/pleahmacaka/fabric-template"
   },
   "license": "MIT",
   "icon": "./assets/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "io.github.techest.betacore.client.BetaCoreClient"
+      {
+        "adapter": "kotlin",
+        "value": "io.github.pleahmacaka.examplemod.client.ExampleModClient"
+      }
     ],
     "main": [
-      "io.github.techest.betacore.BetaCore"
+      {
+        "adapter": "kotlin",
+        "value": "io.github.pleahmacaka.examplemod.ExampleMod"
+      }
     ]
   },
   "mixins": [
-    "betacore.mixins.json"
+    "examplemod.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "${minecraft_version}",
+    "fabric-language-kotlin": ">=1.9.4+kotlin.1.8.21"
   }
 }

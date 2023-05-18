@@ -1,7 +1,7 @@
-package io.github.techest.mixin.bindings;
+package io.github.pleahmacaka.examplemod.mixin.bindings;
 
-import io.github.techest.betacore.BetaCore;
-import io.github.techest.betacore.mixin.ExampleMixinBinding;
+import io.github.pleahmacaka.examplemod.ExampleMod;
+import io.github.pleahmacaka.examplemod.bindings.ExampleMixinBinding;
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -14,7 +14,7 @@ public class ExampleMixin {
 
     @Inject(at = @At("HEAD"), method = "init()V")
     private void init(CallbackInfo info) {
-        BetaCore.Companion.getLogger().info("Example Mixin Loaded!");
+        ExampleMod.INSTANCE.getLogger().info("Example Mixin Loaded!");
         ExampleMixinBinding.INSTANCE.start();
     }
 

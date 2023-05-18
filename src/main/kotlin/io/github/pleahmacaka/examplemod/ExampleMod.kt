@@ -1,4 +1,4 @@
-package io.github.techest.betacore
+package io.github.pleahmacaka.examplemod
 
 import net.fabricmc.api.ModInitializer
 import org.slf4j.Logger
@@ -6,11 +6,9 @@ import org.slf4j.LoggerFactory
 
 const val MODID = "examplemod"
 
-class BetaCore : ModInitializer {
+object ExampleMod : ModInitializer {
 
-    companion object {
-        val logger: Logger = LoggerFactory.getLogger(MODID)
-    }
+    val logger: Logger = LoggerFactory.getLogger(MODID)
 
     override fun onInitialize() {
         logger.info("Hello Fabric!")

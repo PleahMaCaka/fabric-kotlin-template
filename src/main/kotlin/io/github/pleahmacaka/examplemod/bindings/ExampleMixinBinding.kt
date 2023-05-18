@@ -1,4 +1,4 @@
-package io.github.techest.betacore.mixin
+package io.github.pleahmacaka.examplemod.bindings
 
 object ExampleMixinBinding {
     fun start() {
