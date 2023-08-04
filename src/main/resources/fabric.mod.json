@@ -8,7 +8,7 @@
     "PleahMaCaka"
   ],
   "contact": {
-    "website": "https://github.com/pleahmacaka",
+    "website": "https://github.com/pleahmacaka/fabric-template",
     "repo": "https://github.com/pleahmacaka/fabric-template"
   },
   "license": "MIT",
@@ -35,6 +35,6 @@
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
     "minecraft": "${minecraft_version}",
-    "fabric-language-kotlin": ">=1.9.4+kotlin.1.8.21"
+    "fabric-language-kotlin": ">=${fabric_kotlin}"
   }
 }
